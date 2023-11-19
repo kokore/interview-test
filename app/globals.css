@@ -5,13 +5,3 @@
 :root {}
 
 body {}
-
-.underline {
-    background: #603ebe;
-    border-radius: 2.5px;
-    width: 17.75px;
-    height: 4px;
-    position: absolute;
-    left: 0px;
-    top: 17px;
-  }
