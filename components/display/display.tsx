@@ -51,11 +51,11 @@ const Display = () => {
           <div className='flex flex-col'>
             <div>
               <div dir='ltr'>
-                <div className='relative'>
+                <div className='relative desktop:pt-8 desktop:pl-60'>
                   <div className='absolute'>
-                    {windowWidth < 1919 ?
+                    {windowWidth < 1283 ?
                       <img src="athletsStarTablet.svg" alt="athlets" width="450" height="719" className="object-cover pt-12" /> :
-                      <img src="athlets.svg" alt="athlets" width="678" height="950" className="object-cover"></img>
+                      <img src="athlets.svg" alt="athlets" width="678" height="950" className="object-cover pt-12"></img>
                     }
                   </div>
                 </div>
@@ -64,7 +64,7 @@ const Display = () => {
               <div className='flex flex-row bg-white h-52 pr-8'>
                 <div className='basis-1/2' />
                 <div className='flex flex-col basis-1/2 self-center'>
-                  <span className='text-6xl leading-tight text-lightgray'>ATHLETS</span>
+                  <span className='mobile:text-6xl tablet:text-8xl leading-tight text-lightgray'>ATHLETS</span>
                 </div>
               </div>
               <div className='flex flex-row bg-white h-52 pr-8'>
@@ -72,10 +72,10 @@ const Display = () => {
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
                     <img src="number1.svg" alt="number1" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>CONNECTION</span>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>CONNECTION</span>
                   </div>
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal break-words text-base leading-7'>Connect with coaches directly, you can ping coaches to view profile.</span>
+                    <span className='font-normal mobile:text-base desktop:text-xl break-words text-base leading-7'>Connect with coaches directly, you can ping coaches to view profile.</span>
                   </div>
 
                 </div>
@@ -85,10 +85,10 @@ const Display = () => {
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
                     <img src="number2.svg" alt="number2" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>COLLABORATION</span>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>COLLABORATION</span>
                   </div>
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal text-base leading-7'>Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</span>
+                    <span className='font-normal mobile:text-base desktop:text-xl leading-7'>Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</span>
                   </div>
                 </div>
               </div>
@@ -96,12 +96,12 @@ const Display = () => {
                 <div className='basis-1/2' />
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
-                    <img src="number3dark.svg" alt="number3dark" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>GROWTH</span>
+                    <img src="number3black.svg" alt="number3black" className='m-auto' width={22} height={30}></img>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>GROWTH</span>
                   </div>
 
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal text-base leading-7 text-white'>Resources and tools for you to get better as a student Athelte.
+                    <span className='font-normal mobile:text-base desktop:text-xl leading-7 text-white'>Resources and tools for you to get better as a student Athelte.
                       Access to training cls, tutor sessions, etc</span>
                   </div>
                 </div>
@@ -110,54 +110,54 @@ const Display = () => {
 
             <div>
               <div dir='rtl'>
-                <div className='relative'>
+                <div className='relative desktop:pt-2 desktop:pr-72 tablet:pt-20'>
                   <div className='absolute'>
-                    {windowWidth < 1919 ?
-                      <img src="playerStartTablet.svg" alt="playerStartTablet" width="450" height="719" className="object-cover pt-12" /> :
+                    {windowWidth < 1283 ?
+                      <img src="playerStartTablet.svg" alt="playerStartTablet" width="520" height="600" className="object-cover pt-12" /> :
                       <img src="player.svg" alt="player" width="991" height="815" className="object-cover"></img>
                     }
                   </div>
                 </div>
               </div>
 
-              <div className='flex flex-row bg-white h-52 tablet:pl-8 desktop:pl-32'>
+              <div className='flex flex-row bg-white h-52 tablet:pl-8 desktop:pl-80 desktop:pt-12'>
                 <div className='flex flex-col basis-1/2 self-center'>
-                  <span className='text-6xl leading-tight text-lightgray'>PLAYERS</span>
+                  <span className='mobile:text-6xl tablet:text-8xl leading-tight text-lightgray'>PLAYERS</span>
                 </div>
                 <div className='basis-1/2' />
               </div>
-              <div className='flex flex-row bg-white h-52 tablet:pl-8 desktop:pl-32'>
+              <div className='flex flex-row bg-white h-52 tablet:pl-8 desktop:pl-80'>
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
                     <img src="number1.svg" alt="number1" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>CONNECTION</span>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>CONNECTION</span>
                   </div>
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal text-base leading-7'>Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</span>
+                    <span className='font-normal mobile:text-base desktop:text-xl leading-7'>Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</span>
                   </div>
                 </div>
                 <div className='basis-1/2' />
               </div>
-              <div className='flex flex-row bg-gray1 h-64 tablet:pl-8 desktop:pl-32'>
+              <div className='flex flex-row bg-gray1 h-64 tablet:pl-8 desktop:pl-80'>
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
                     <img src="number2.svg" alt="number2" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>COLLABORATION</span>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>COLLABORATION</span>
                   </div>
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal text-base leading-7'>Work with recruiter to increase your chances of findingtalented athlete.</span>
+                    <span className='font-normal mobile:text-base desktop:text-xl leading-7'>Work with recruiter to increase your chances of findingtalented athlete.</span>
                   </div>
                 </div>
                 <div className='basis-1/2' />
               </div>
-              <div className='flex flex-row bg-darkblue h-60 tablet:pl-8 desktop:pl-32'>
+              <div className='flex flex-row bg-darkblue h-60 tablet:pl-8 desktop:pl-80'>
                 <div className='flex flex-col basis-1/2 self-center'>
                   <div className='flex flex-row self-start gap-2.5 pb-5'>
                     <img src="number3dark.svg" alt="number3dark" className='m-auto' width={22} height={30}></img>
-                    <span className='font-normal text-lg leading-tight tracking-wide text-darkgray'>GROWTH</span>
+                    <span className='font-normal mobile:text-lg desktop:text-4xl leading-tight tracking-wide text-darkgray'>GROWTH</span>
                   </div>
                   <div className='tablet:w-11/12 desktop:w-6/12'>
-                    <span className='font-normal text-base leading-7 text-white'>Save your time, recruit proper athlets for your team.</span>
+                    <span className='font-normal mobile:text-base desktop:text-xl leading-7 text-white'>Save your time, recruit proper athlets for your team.</span>
                   </div>
                 </div>
                 <div className='basis-1/2' />
